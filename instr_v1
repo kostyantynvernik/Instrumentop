@@ -1,4 +1,3 @@
-<script>
 $('#button-cart1').on('click', function() {
 vv='';
 otz222=$(".otz222").length;
@@ -24,4 +23,3 @@ $('.maintovcartfooter_new').html('<span style="font-weight:bold;">Відгукі
 }
 console.log('Exp_compas1');
 })
-</script>
