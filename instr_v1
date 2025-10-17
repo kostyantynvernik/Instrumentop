@@ -1,0 +1,27 @@
+<script>
+$('#button-cart1').on('click', function() {
+vv='';
+otz222=$(".otz222").length;
+if (otz222>0){
+$(".otz222").each( function( index, element ) {
+if ( index < 3 ){vv+='<div class="slider-slide" style="text-align: center;border: 1px solid lightgray;border-radius: 5px;padding: 5px 20px;">'+$(this).html()+'</div>';}
+ else {return false;}
+});
+$('.maintovcartfooter_new').html('<div class="simple-slider simple-slider-second" style="padding: 0;margin-top: 30px;"><div class="slider-wrapper">'+vv+'</div><div class="slider-btn slider-btn-prev"><i class="fa fa-chevron-left fa-3x"></i></div><div class="slider-btn slider-btn-next"><i class="fa fa-chevron-right fa-3x"></i></div></div>');
+new SimpleSlider('.simple-slider-second', {
+speed: 600,
+autoplay: false,
+class: {
+wrapper: 'slider-wrapper'
+},
+slidesPerView: {
+300: 1
+}
+});
+}
+else {
+$('.maintovcartfooter_new').html('<span style="font-weight:bold;">Відгуків про цей товар ще не було.</span>');
+}
+console.log('Exp_compas1');
+})
+</script>
